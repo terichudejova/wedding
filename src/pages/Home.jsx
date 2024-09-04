@@ -4,7 +4,7 @@ export default function Home() {
     return (
         <div className="landingPage">
             <div className='home'>
-                <span>Petr & Lucie</span>
+                <span>Lucie & Petr</span>
                 <h1>Bereme se!!!</h1>
             </div>
         </div>
