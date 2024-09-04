@@ -15,9 +15,11 @@ function App() {
         {" | "}
         <NavLink to="/wedding/place">Kdy a kde</NavLink>
         {" | "}
-        <NavLink to="/wedding/contact">Napiš nám</NavLink>
+        <NavLink to="/wedding/about">Náš příběh</NavLink>
         {" | "}
         <NavLink to="/wedding/qanda">Časté otázky</NavLink>
+        {" | "}
+        <NavLink to="/wedding/contact">Napiš nám</NavLink>
       </nav>
       <Outlet />
     </div>

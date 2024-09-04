@@ -7,6 +7,7 @@ import Home from './pages/Home.jsx'
 import Contact from './pages/Contact.jsx'
 import Place from './pages/Place.jsx'
 import QandA from './pages/QandA.jsx'
+import About from './pages/About.jsx'
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: "/wedding/qanda",
         element: <QandA />
+      },
+      {
+        path: "/wedding/about",
+        element: <About />
       }
     ]
   }
