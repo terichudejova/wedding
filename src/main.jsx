@@ -6,6 +6,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Home from './pages/Home.jsx'
 import Contact from './pages/Contact.jsx'
 import Place from './pages/Place.jsx'
+import QandA from './pages/QandA.jsx'
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: "/wedding/place",
         element: <Place />
+      },
+      {
+        path: "/wedding/qanda",
+        element: <QandA />
       }
     ]
   }
