@@ -1,8 +1,12 @@
+import { NavLink, Outlet } from 'react-router-dom'
+
 export default function Home() {
     return (
-        <div>
-            <h2>Home Page</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste maiores qui saepe blanditiis libero eveniet nesciunt. Explicabo, nisi nemo unde sit dignissimos laudantium quae enim aliquid harum corporis, eveniet optio.</p>
+        <div className="landingPage">
+            <div className='home'>
+                <span>Petr & Lucie</span>
+                <h1>Bereme se!!!</h1>
+            </div>
         </div>
     )
 }
