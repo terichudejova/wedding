@@ -2,9 +2,7 @@
   /* Colors: */
   --main-color: rgb(206, 239, 206);
   --second-color: rgb(123, 132, 123);
-  --third-color: #1698CB;
   --hover-color: rgb(55, 77, 55);
-  --purple-color: #886cae;
   --grey-color: rgb(89, 88, 88);
 
   /* Fonts: */
@@ -43,6 +41,3 @@ body, html {
   text-size-adjust: none;
   -webkit-text-size-adjust: none;
 }
-
-
-

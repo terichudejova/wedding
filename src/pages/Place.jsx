@@ -63,8 +63,11 @@ export default function Place() {
                         </div>
                         <img src="images/alcohol.png"/>
                     </div>
-                </div>
+                </div> 
             </div>  
+            <footer>
+                <a href='https://www.terezachudejova.cz/' target='_isBlank'><p>© Tereza Chudějová, 2024</p></a>
+            </footer>
         </div>
     )
 }
