@@ -557,13 +557,13 @@ nav a.active{
 #alcohol2 {
   position: absolute;
   width: 150px;
-  right: -30%;
+  right: -25%;
 }
 
 #doves {
   position: absolute;
-  width: 200px;
-  left: -35%;
+  width: 180px;
+  left: -30%;
 }
 
 /* KONTAKT */
@@ -844,5 +844,58 @@ footer a:hover {
 
   #letter2 {
     right: 30%;
+  }
+}
+
+
+@media only screen and (max-width: 1400px) {
+  /* KDY A KDE */
+  .place {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .placeColumn {
+    margin-bottom: calc(var(--space-l) * 2);
+    width: 80%;
+  }
+
+  .timeColumn {
+    width: 80%;
+  }
+
+  /* STORY */
+  .petr,
+  .lucie {
+    width: 90%;
+  }
+
+  /* FAQ */
+  .faqBox {
+    width: 90%;
+  }
+
+  .answer p {
+    width: 90%;
+  }
+
+  /* KONTAKT */
+  #letter {
+    left: 0;
+  }
+
+  #letter2 {
+    right: 0;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  /* CONTACT */
+  #letter {
+    width: 120px;
+  }
+  
+  #letter2 {
+    width: 130px;
   }
 }
