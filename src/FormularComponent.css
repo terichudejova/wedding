@@ -87,11 +87,7 @@
   }
   
   /* Media Queries */
-  /* @media only screen and (min-width: 2000px) {
-    .formularObject {
-      height: 45rem;
-    }
-  
+  @media only screen and (min-width: 2000px) {
     .label {
       font-size: var(--size-m);
     }
@@ -99,8 +95,29 @@
     .formularButton {
       font-size: var(--size-m);
     }
+
+    .inputStyle,
+    .textArea {
+      margin-bottom: 14px;
+    }
+  }
+
+  @media only screen and (min-width: 3000px) {
+    .label {
+      font-size: var(--size-l);
+    }
+  
+    .formularButton {
+      font-size: var(--size-l);
+    }
+
+    .inputStyle,
+    .textArea {
+      margin-bottom: 16px;
+    }
   }
   
+  /* 
   @media only screen and (max-width: 1400px) {
     .formularObject {
       margin: 0 0 0 calc(var(--space-m));

@@ -3,7 +3,7 @@
 /* OBECNÁ NASTAVENÍ */
 .outerBox {
   width: 100%;
-  height: auto;
+  min-height: 100vh;
   margin: 0;
 }
 
@@ -12,7 +12,7 @@
   padding-left: var(--space-xxl);
   padding-right: var(--space-xxl);
   padding-bottom: var(--space-xxxl);
-  height: auto;
+  height: 100%;
 }
 
 .innerBox h2 {
@@ -104,7 +104,7 @@ nav a.active{
 /* KDY A KDE */
 .place {
   background-color: var(--second-color);
-  height: auto;
+  height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -577,6 +577,15 @@ nav a.active{
   box-sizing: border-box;
 }
 
+.formular {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+}
+
 .contact p {
   font-size: var(--size-m);
   color: white;
@@ -629,12 +638,12 @@ nav a.active{
 }
 
 footer {
-  background-color: var(--main-color);
+  background-color: transparent;
 }
 
 footer p {
   margin: 0;
-  color: var(--hover-color);
+  color: var(--main-color);
   font-size: calc(var(--size-l) / 2);
   text-align: center;
   padding: var(--space-xs) 0;
@@ -647,6 +656,193 @@ footer a {
 }
 
 footer a:hover {
-  text-decoration: underline var(--hover-color);
+  text-decoration: underline var(--main-color);
   cursor: pointer;
+}
+
+
+
+/* RESPONSIVITY */
+
+@media only screen and (min-width: 2000px) {
+
+  /* HOMEPAGE */
+  nav .navLink {
+    font-size: var(--size-l);
+  }
+
+  .home span {
+    font-size: calc(var(--size-xl) * 2);
+    margin-top: calc(var(--space-l) * 2);
+    margin-bottom: var(--space-s);
+  }
+
+  .home h1 {
+    font-size: calc(var(--size-l) * 2);
+  }
+
+  .copyright p,
+  footer p {
+    font-size: var(--size-s);
+  }
+
+  /* KDY A KDE */
+  .place h2 {
+    font-size: var(--size-xl);
+  }
+
+  .place p {
+    font-size: var(--size-m);
+  }
+
+  .timeColumn h3 {
+    font-size: var(--size-xl);
+  }
+
+  .card h4 {
+    font-size: var(--size-m);
+  }
+
+  /* O NÁS */
+  .omne h3 {
+    font-size: calc(var(--size-l) * 2);
+  }
+
+  .omne p {
+    font-size: var(--size-l);
+  }
+
+  .storyHeader h3 {
+    font-size: var(--size-xxl);
+    top: 40%;
+  }
+
+  .year p {
+    font-size: calc(var(--size-l) * 2);
+  }
+
+  .story p {
+    font-size: var(--size-m);
+  }
+
+  /* FAQ */
+  .faq {
+    margin-bottom: var(--space-xxxl);
+  }
+
+  .faq h4 {
+    font-size: calc(var(--size-m) * 7);
+  }
+
+  .answer h5 {
+    font-size: var(--size-xl);
+  }
+
+  .answer p {
+    font-size: var(--size-l);
+  }
+
+  /* KONTAKT */
+  .contact p {
+    font-size: var(--size-l);
+  }
+
+  #letter {
+    left: 20%;
+  }
+
+  #letter2 {
+    right: 20%;
+  }
+}
+
+@media only screen and (min-width: 3000px) {
+
+  /* HOMEPAGE */
+  nav .navLink {
+    font-size: var(--size-xl);
+  }
+
+  .home span {
+    font-size: calc(var(--size-xl) * 3);
+    margin-top: calc(var(--space-l) * 3);
+  }
+
+  .home h1 {
+    font-size: calc(var(--size-xl) * 2);
+  }
+
+  .copyright p,
+  footer p {
+    font-size: var(--size-s2);
+  }
+
+  /* KDY A KDE */
+  .place h2 {
+    font-size: var(--size-xxl);
+  }
+
+  .place p {
+    font-size: var(--size-l);
+  }
+
+  .timeColumn h3 {
+    font-size: var(--size-xxl);
+  }
+
+  .card h4 {
+    font-size: var(--size-l);
+  }
+
+  /* O NÁS */
+  .omne h3 {
+    font-size: calc(var(--size-xl) * 2);
+  }
+
+  .omne p {
+    font-size: var(--size-xl);
+  }
+
+  .storyHeader h3 {
+    font-size: var(--size-xxxl);
+    left: 21%;
+  }
+
+  .year p {
+    font-size: calc(var(--size-xl) * 2);
+  }
+
+  .story p {
+    font-size: var(--size-l);
+  }
+
+  /* FAQ */
+  .faq {
+    margin-bottom: calc(var(--space-l) * 2);
+  }
+
+  .faq h4 {
+    font-size: calc(var(--size-xl) * 5);
+  }
+
+  .answer h5 {
+    font-size: var(--size-xxl);
+  }
+
+  .answer p {
+    font-size: var(--size-xl);
+  }
+
+  /* KONTAKT */
+  .contact p {
+    font-size: var(--size-xl);
+  }
+
+  #letter {
+    left: 30%;
+  }
+
+  #letter2 {
+    right: 30%;
+  }
 }
