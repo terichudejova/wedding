@@ -58,7 +58,7 @@ export default function Place() {
                     <div className="line2"></div>
                     <div className="afterparty card">
                         <div className="popis">
-                            <h4>Afterparty</h4>
+                            <h4>Afterparty 20:00</h4>
                             <p>Zábava večer nekončí, teprve začíná!</p>
                         </div>
                         <img src="images/alcohol.png"/>

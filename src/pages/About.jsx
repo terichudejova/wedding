@@ -5,6 +5,7 @@ export default function About() {
         <div>
             <div className="outerBox">
                 <div className="innerBox about">
+                    <div className="relativeDiv">
                         <div className="storyHeader">
                             <img id="leaves" src="images/leaves_sign.png"/>
                             <h3>Petr & Lucie</h3>
@@ -40,13 +41,13 @@ export default function About() {
                             </div>
                             <div className="rightColumn">
                                 <div className="story">
-                                    <p>Osudná procházka Grébovkou</p>
+                                    <p>Osudová procházka Grébovkou</p>
                                 </div>
                                 <div className="year">
                                     <p>2019</p>
                                 </div>
                                 <div className="story">
-                                    <p>Rok v Asii</p>
+                                    <p>Rok cestování po Asii</p>
                                 </div>
                                 <div className="year">
                                     <p>2022</p>
@@ -59,8 +60,9 @@ export default function About() {
                                 </div>
                             </div>
                         </div>
-
-                    
+                        <img id='brideImg' src='images/bride.jpg'/>
+                        <img id='groomImg' src='images/groom.jpg'/>
+                    </div>
                 </div>
             </div>
         </div>

@@ -123,8 +123,9 @@ nav a.active{
 
 .line2 {
   width: 3px;
-  height: 30px;
+  height: 50px;
   background-color: var(--main-color);
+  border-radius: 20px;
 }
 
 .place p {
@@ -273,7 +274,7 @@ nav a.active{
   flex-direction: row;
   justify-content: center;
   align-items: start;
-  margin-top: var(--space-l);
+  margin-top: var(--space-xxl);
 }
 
 .timeline .leftColumn,
@@ -315,7 +316,7 @@ nav a.active{
 }
 
 .story p {
-  font-size: var(--size-m);
+  font-size: var(--size-s2);
   color: white;
   font-family: var(--main-font);
   letter-spacing: 1.5px;
@@ -324,9 +325,9 @@ nav a.active{
 
 .timelineLine {
   width: 3px;
-  height: 62rem;
+  height: 60rem;
   background-color: var(--main-color);
-  border-radius: 25px;
+  border-radius: 50px;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -338,4 +339,140 @@ nav a.active{
   font-size: var(--size-xxl) !important;
   color: var(--main-color);
   margin-bottom: 7.5rem;
+}
+.relativeDiv {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+}
+
+#brideImg,
+#groomImg {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 0 50px;
+  border: 2px solid var(--main-color);
+  position: absolute;
+}
+
+#groomImg {
+  left: 5rem;
+  top: 3rem;
+}
+
+#brideImg {
+  right: 5rem;
+  top: 3rem;
+}
+
+
+/* ČASTÉ OTÁZKY */
+.qanda {
+  background-color: var(--second-color);
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding-top: calc(var(--space-l) * 3);
+  box-sizing: border-box;
+}
+
+.faqBox {
+  width: 80%;
+}
+
+.qanda .left,
+.qanda .right {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+}
+
+.qanda .left {
+  justify-content: start;
+}
+
+.qanda .right {
+  justify-content: end;
+}
+
+.faq {
+  margin-bottom: var(--space-xxl);
+}
+
+.faq h4 {
+  font-size: calc(var(--size-l) * 5);
+  font-family: var(--heading-font);
+  color: var(--main-color);
+  margin: 0;
+  padding: 0;
+}
+
+.answer {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 70%;
+}
+
+.left .answer {
+  align-items: start;
+  margin-top: var(--space-xs2);
+  margin-left: var(--space-l);
+}
+
+.right .answer {
+  align-items: end;
+  margin-top: var(--space-xs2);
+  margin-right: var(--space-l);
+}
+
+.answer h5 {
+  margin: 0;
+  font-size: var(--size-l);
+  font-family: var(--main-font);
+  font-weight: 300;
+  color: var(--main-color);
+  letter-spacing: 1.5px;
+  margin-bottom: var(--space-xs);
+}
+
+.answer p {
+  margin: 0;
+  font-size: var(--size-m);
+  color: white;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+.right .answer p {
+  text-align: right;
+}
+
+.faqLine {
+  width: 20rem;
+  height: 3px;
+  border-radius: 30px;
+  background-color: var(--hover-color);
+  margin-bottom: var(--space-xs2);
+}
+
+
+
+/* KONTAKT */
+.contact {
+  width: 100%;
+  background-color: var(--second-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  box-sizing: border-box;
 }
