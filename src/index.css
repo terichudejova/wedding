@@ -20,7 +20,7 @@
 }
 
 /* NAVBAR */
-nav {
+/* nav {
   position: absolute;
   background-color: transparent;
   width: 100%;
@@ -58,7 +58,87 @@ nav a.active{
   color:var(--main-color);
   background-color: transparent;
   border-radius: 16px;
+} */
+
+/* NAVBAR */
+nav {
+  position: absolute;
+  background-color: transparent;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-s) var(--space-m);
+  box-sizing: border-box;
+  margin: 0;
 }
+
+.nav-links {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navLink {
+  text-decoration: none;
+  font-family: var(--main-font);
+  letter-spacing: 2px;
+  font-size: var(--size-m);
+  padding: var(--space-xxs) var(--space-s);
+  color: white;
+}
+
+.navLink:hover {
+  cursor: pointer;
+  color: var(--hover-color);
+}
+
+.navLink.active {
+  color: var(--hover-color);
+  background-color: var(--main-color);
+  border-radius: 16px;
+}
+
+#homeLink {
+  color: var(--main-color);
+  background-color: transparent;
+  border-radius: 16px;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  height: 3px;
+  width: 35px;
+  background-color: var(--main-color);
+  border-radius: 3px;
+  transition: all 0.3s ease;
+  margin-bottom: 10px;
+}
+
+/* Přechod hamburgeru na křížek */
+.nav.open .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 13.5px) scaleX(1.2);
+}
+
+.nav.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.nav.open .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -13.5px) scaleX(1.2);
+}
+
+
 
 
 
@@ -898,4 +978,45 @@ footer a:hover {
   #letter2 {
     width: 130px;
   }
+}
+
+/* Media Query for Mobile Screens */
+@media only screen and (max-width: 1000px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust according to your design */
+    right: 0;
+    background-color: var(--main-color);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    margin-top: var(--space-s);
+    z-index: 1;
+    padding-top: var(--space-xs);
+    padding-bottom: var(--space-xs);
+  }
+
+  .nav.open .nav-links {
+    display: flex;
+  }
+
+  .navLink {
+    margin-bottom: var(--space-xxs);
+    color: var(--second-color);
+  }
+
+  .hamburger {
+    display: flex;
+  }
+  
+  .nav-links.show {
+    display: flex;
+  }
+
+  #homeLink {
+    color: var(--second-color);
+  }
+  
 }

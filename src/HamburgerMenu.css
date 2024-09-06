@@ -1,0 +1,146 @@
+
+
+/* Celé hamburger menu */
+.hamburger-menu {
+    position: fixed;
+    top: 70px;
+    right: 60px;
+    z-index: 2;
+    width: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
+  
+  /* Samotný "hamburger" */
+  .menu-toggle {
+    cursor: pointer;
+    width: 30px;
+    height: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.7) 0 0 5px;
+  }
+
+  /* Přechod hamburgeru na křížek */
+  .menu-toggle.open .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 8px) scaleX(1.2);
+  }
+  
+  .menu-toggle.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menu-toggle.open .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -8px) scaleX(1.2);
+  }
+  
+  /* Styling rozbalené nabídky */
+  .nav-menu {
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    top: 50px;
+    right: -40px;
+    position: absolute;
+    background-color: white;
+    width: 140px;
+    height: 160px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: var(--size-s);
+    text-align: center;
+  }
+  
+  .nav-menu.open {
+    display: flex;
+  }
+  
+  .nav-menu a {
+    padding: 10px 0;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .nav-menu a:hover {
+    text-decoration: underline;
+  }
+
+
+  /* RESPONSIVITY */
+
+/* Menší než 1100px */
+@media only screen and (max-width: 1100px) {
+  .hamburger-menu {
+      display: flex;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hamburger-menu {
+    top: 50px;
+    right: 50px;
+  }
+
+  .nav-menu {
+    right: -30px;
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+  .hamburger-menu {
+    right: 45px;
+  }
+
+  .nav-menu {
+    right: -20px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .hamburger-menu {
+    top: 60px;
+    right: 30px;
+  }
+
+  .nav-menu {
+    height: 140px;
+    width: 120px;
+    font-size: var(--size-xs);
+    right: -10px;
+    padding: 20px;
+  }
+
+  .bar {
+    height: 2px;
+  }
+
+  .menu-toggle {
+    width: 20px;
+    height: 16px;
+  }
+
+  .menu-toggle.open .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px) scaleX(1.2);
+  }
+  
+  .menu-toggle.open .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px) scaleX(1.2);
+  }
+
+}
+  
