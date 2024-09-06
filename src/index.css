@@ -314,6 +314,17 @@ nav {
   margin-left: var(--space-xs);
 }
 
+.prijezd p,
+.obed p,
+.zabava p {
+  text-align: left;
+}
+
+.obrad p,
+.krajeni p,
+.afterparty p {
+  text-align: right;
+}
 
 /* ABOUT - OUR STORY */
 .about {
@@ -982,6 +993,7 @@ footer a:hover {
 
 /* Media Query for Mobile Screens */
 @media only screen and (max-width: 1000px) {
+  /* NAVBAR */
   .nav-links {
     display: none;
     flex-direction: column;
@@ -1018,5 +1030,275 @@ footer a:hover {
   #homeLink {
     color: var(--second-color);
   }
-  
+
+  /* KDY A KDE */
+  .placeColumn,
+  .timeColumn {
+    width: 90%;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  /* HOME */
+  .home span {
+    font-size: calc(var(--size-m) * 2);
+  }
+
+  .home h1 {
+    font-size: calc(var(--size-s) * 2);
+  }
+
+  /* OUR STORY */
+  .about.innerBox {
+    padding-left: var(--space-l);
+    padding-right: var(--space-l);
+  }
+
+  .petrLucie {
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    margin-bottom: var(--space-s);
+  }
+
+  .petr,
+  .lucie {
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .petr .omne,
+  .lucie .omne {
+    align-items: center;
+  }
+
+  .lucie .omne p,
+  .petr .omne p {
+    text-align: center;
+  }
+
+  .petr {
+    margin: 0;
+    margin-right: var(--space-s);
+  }
+
+  .lucie {
+    margin-left: var(--space-s);
+  }
+
+  #groomImg,
+  #brideImg {
+    margin: 0;
+    margin-bottom: var(--space-s);
+  }
+
+  #brideImg {
+    order: -1;
+  }
+
+  .timeline .leftColumn {
+    margin-left: 0;
+  }
+
+  .timeline .rightColumn {
+    margin-right: 0;
+  }
+
+  .leftColumn .story {
+    text-align: right;
+  }
+
+  .omne p {
+    font-size: var(--size-s2);
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  /* KDY A KDE */
+  .placeColumn,
+  .timeColumn {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* KDY A KDE */
+  .place.innerBox {
+    padding-left: var(--space-l);
+    padding-right: var(--space-l);
+    padding-bottom: var(--space-xl);
+  }
+
+  .place h2,
+  .time h2 {
+    font-size: var(--size-m);
+  }
+
+  .place p,
+  .time p,
+  .card h4 {
+    font-size: var(--size-s);
+  }
+
+  .card img {
+    width: 60px;
+  }
+
+  #map {
+    width: 400px;
+  }
+
+  /* OUR STORY */
+  .petrLucie {
+    display: none;
+  }
+
+  .timeline .leftColumn {
+    margin-right: var(--space-s);
+  }
+
+  .timeline .rightColumn {
+    margin-left: var(--space-s);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  /* KDY A KDE */
+  .place.innerBox {
+    padding-left: var(--space-m);
+    padding-right: var(--space-m);
+  }
+
+  .card {
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .prijezd .popis,
+  .obed .popis,
+  .zabava .popis,
+  .obrad .popis,
+  .krajeni .popis,
+  .afterparty .popis{
+    align-items: center;
+  }
+
+  .obrad img,
+  .krajeni img,
+  .afterparty img {
+    order: -1;
+  }
+
+  .prijezd img,
+  .obed img,
+  .zabava img,
+  .obrad img,
+  .krajeni img,
+  .afterparty img {
+    margin: 0;
+    margin-top: var(--space-xs);
+  }
+
+  .card p {
+    margin-bottom: var(--space-xs);
+  }
+
+  .card p,
+  .card h4 {
+    text-align: center;
+  }
+
+  #map {
+    width: 350px;
+  }
+
+  /* OUR STORY */
+  .about.innerBox {
+    padding-left: var(--space-xs2);
+    padding-right: var(--space-xs2);
+  }
+
+  #leaves {
+    width: 15rem;
+  }
+
+  .storyHeader h3 {
+    font-size: var(--size-l);
+    left: 30%;
+    top: 40%;
+  }
+
+  .timeline {
+    margin-top: var(--space-l);
+  }
+
+  .timeline .leftColumn {
+    margin-right: var(--space-xs);
+  }
+
+  .timeline .rightColumn {
+    margin-left: var(--space-xs);
+  }
+
+  .story p {
+    font-size: var(--size-s);
+  }
+
+  .year p {
+    font-size: var(--size-xxl);
+  }
+}
+
+
+@media only screen and (max-width: 400px) {
+  /* HOME */
+  .home span {
+    font-size: calc(var(--size-s) * 2);
+  }
+
+  .home h1 {
+    font-size: var(--size-l);
+  }
+
+  .copyright p {
+    font-size: calc(var(--size-m) / 2);
+  }
+
+  /* KDY A KDE */
+  .place.innerBox {
+    padding-left: var(--space-s);
+    padding-right: var(--space-s);
+  }
+
+  .placeColumn {
+    margin-bottom: var(--space-xxl);
+  }
+
+  #map {
+    width: 280px;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  /* HOME */
+  .home span {
+    font-size: var(--size-l);
+    text-align: center;
+  }
+
+  .home h1 {
+    font-size: var(--size-m);
+    text-align: center;
+  }
+
+  /* KDY A KDE  */
+  #map {
+    width: 250px;
+  }
 }
