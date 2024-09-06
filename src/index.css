@@ -970,6 +970,13 @@ footer a:hover {
     width: 90%;
   }
 
+  #guests,
+  #gift,
+  #alcohol2,
+  #doves {
+    display: none;
+  }
+
   /* KONTAKT */
   #letter {
     left: 0;
@@ -981,6 +988,9 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 1200px) {
+  /* FAQ */
+
+
   /* CONTACT */
   #letter {
     width: 120px;
@@ -1038,6 +1048,31 @@ footer a:hover {
   }
 
   .card {
+    width: 100%;
+  }
+
+  /* FAQ */
+  .faq h4 {
+    margin-right: var(--space-xs);
+    width: 100px;
+    order: -1;
+  }
+
+  .qanda .right {
+    justify-content: start;
+  }
+
+  .right .answer {
+    align-items: start;
+    margin-left: var(--space-l);
+    margin-right: 0;
+  }
+
+  .right .answer p {
+    text-align: left;
+  }
+
+  .answer p {
     width: 100%;
   }
 }
@@ -1116,12 +1151,47 @@ footer a:hover {
   .omne p {
     font-size: var(--size-s2);
   }
+
+  /* FAQ */
+  .qanda.innerBox {
+    padding-left: var(--space-l);
+    padding-right: var(--space-l);
+  }
+
+  .faq h4 {
+    font-size: calc(var(--size-l) * 4);
+    width: 70px;
+  }
+
+  .answer h5 {
+    font-size: var(--size-m);
+  }
+
+  .answer p {
+    font-size: var(--size-s2);
+  }
 }
 
 @media only screen and (max-width: 700px) {
   /* KDY A KDE */
   .placeColumn,
   .timeColumn {
+    width: 100%;
+  }
+
+  /* FAQ */
+  .qanda .left,
+  .qanda .right {
+    flex-direction: column;
+  }
+
+  .left .answer,
+  .right .answer {
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .answer {
     width: 100%;
   }
 }
@@ -1283,6 +1353,15 @@ footer a:hover {
   #map {
     width: 280px;
   }
+
+    /* FAQ */
+    .qanda.innerBox {
+      padding-left: var(--space-m);
+      padding-right: var(--space-m);
+    }
+    .faq h4 {
+      font-size: calc(var(--size-xxxl) * 2);
+    }
 }
 
 @media only screen and (max-width: 330px) {
