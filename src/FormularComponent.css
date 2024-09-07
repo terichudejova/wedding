@@ -12,7 +12,7 @@
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    font-size: var(--size-s);
+    font-size: var(--size-s2);
     font-family: var(--main-font);
     letter-spacing: 1.5px;
   }
@@ -116,7 +116,32 @@
       margin-bottom: 16px;
     }
   }
-  
+
+  @media only screen and (max-width: 1100px) {
+    .formularObject {
+      width: 50rem;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .formularObject {
+      width: 40rem;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .formularObject {
+      width: 100%;
+    }
+  }
+
+   @media only screen and (max-width: 400px) {
+    .label {
+      font-size: var(--size-s);
+    }
+  }
+
+
   /* 
   @media only screen and (max-width: 1400px) {
     .formularObject {

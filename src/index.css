@@ -1001,7 +1001,15 @@ footer a:hover {
   }
 }
 
-/* Media Query for Mobile Screens */
+@media only screen and (max-width: 1100px) {
+  /* CONTACT */
+  .contact.innerBox {
+    padding-left: var(--space-l);
+    padding-right: var(--space-l);
+  }
+}
+
+
 @media only screen and (max-width: 1000px) {
   /* NAVBAR */
   .nav-links {
@@ -1074,6 +1082,22 @@ footer a:hover {
 
   .answer p {
     width: 100%;
+  }
+
+  .faqLine {
+    width: 18rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  /* CONTACT */
+  #letter,
+  #letter2 {
+    display: none;
+  }
+
+  .contact p {
+    width: 80%;
   }
 }
 
@@ -1170,6 +1194,10 @@ footer a:hover {
   .answer p {
     font-size: var(--size-s2);
   }
+
+  .faqLine {
+    width: 15rem;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -1234,6 +1262,24 @@ footer a:hover {
 
   .timeline .rightColumn {
     margin-left: var(--space-s);
+  }
+
+  .about.innerBox {
+    padding-bottom: var(--space-l);
+  }
+
+  /* FAQ */
+  .qanda.innerBox {
+    padding-bottom: var(--space-s);
+  }
+
+  /* KONTAKT */
+  .contact p {
+    font-size: var(--size-s2);
+  }
+  
+  .contact.innerBox {
+    padding-bottom: var(--space-xl);
   }
 }
 
@@ -1323,6 +1369,11 @@ footer a:hover {
   .year p {
     font-size: var(--size-xxl);
   }
+
+  /* KONTAKT */
+  .contact p {
+    width: 90%;
+  }
 }
 
 
@@ -1354,14 +1405,25 @@ footer a:hover {
     width: 280px;
   }
 
-    /* FAQ */
-    .qanda.innerBox {
-      padding-left: var(--space-m);
-      padding-right: var(--space-m);
-    }
-    .faq h4 {
-      font-size: calc(var(--size-xxxl) * 2);
-    }
+  /* FAQ */
+  .qanda.innerBox {
+    padding-left: var(--space-m);
+    padding-right: var(--space-m);
+  }
+
+  .faq h4 {
+    font-size: calc(var(--size-xxxl) * 2);
+  }
+  
+  .faqLine {
+    width: 12rem;
+  }
+
+  /* KONTAKT */
+  .contact p {
+    font-size: var(--size-s);
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 330px) {
@@ -1379,5 +1441,10 @@ footer a:hover {
   /* KDY A KDE  */
   #map {
     width: 250px;
+  }
+
+  /* FAQ */
+  .faqLine {
+    width: 10rem;
   }
 }
