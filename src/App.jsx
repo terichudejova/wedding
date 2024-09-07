@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -8,17 +8,39 @@ import { NavLink, Outlet } from 'react-router-dom'
 
 function App() {
 
-
+  //Hamburger Menu
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
+  //Pozadí pro wide navbar při scrollování
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > 20) {
+      setIsScrolled(true);
+    }
+    else {
+      setIsScrolled(false)
+    };
+  }
+
+      // Přidání event listeneru při načtení komponenty
+      useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+
+        // Čištění event listeneru při odchodu z komponenty
+        return () => {
+          window.removeEventListener('scroll', handleScroll);
+        };
+      }, []);
+
 
   return (
     <div>
-      <nav className={`nav ${isOpen ? 'open' : ''}`}>
+      <nav className={`nav ${isOpen ? 'open' : ''} ${isScrolled ? 'scrolled' : ''}`}>
         <div className="hamburger" onClick={toggleMenu}>
           <span className="bar"></span>
           <span className="bar"></span>

@@ -82,6 +82,7 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 .navLink {
@@ -108,6 +109,10 @@ nav {
   color: var(--main-color);
   background-color: transparent;
   border-radius: 16px;
+}
+
+.nav.scrolled {
+  background-color: var(--second-color);
 }
 
 /* Hamburger Menu */
@@ -1019,7 +1024,6 @@ footer a:hover {
     position: absolute;
     top: 60px; /* Adjust according to your design */
     right: 0;
-    background-color: var(--main-color);
     width: 100%;
     text-align: center;
     transition: 0.3s ease-in-out;
@@ -1044,10 +1048,15 @@ footer a:hover {
   
   .nav-links.show {
     display: flex;
+    background-color: var(--main-color);
   }
 
   #homeLink {
     color: var(--second-color);
+  }
+
+  .nav.scrolled {
+    background-color: transparent;
   }
 
   /* KDY A KDE */
