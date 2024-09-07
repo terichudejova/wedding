@@ -62,7 +62,7 @@ nav a.active{
 
 /* NAVBAR */
 nav {
-  position: absolute;
+  position: fixed;
   background-color: transparent;
   width: 100%;
   height: auto;
@@ -73,6 +73,7 @@ nav {
   padding: var(--space-s) var(--space-m);
   box-sizing: border-box;
   margin: 0;
+  z-index: 2;
 }
 
 .nav-links {
