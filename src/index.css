@@ -1102,6 +1102,11 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 800px) {
+  /* NAVBAR */
+  .navLink {
+    font-size: var(--size-s2);
+  }
+
   /* HOME */
   .home span {
     font-size: calc(var(--size-m) * 2);
@@ -1378,6 +1383,11 @@ footer a:hover {
 
 
 @media only screen and (max-width: 400px) {
+   /* NAVBAR */
+   .navLink {
+    font-size: var(--size-s);
+  }
+
   /* HOME */
   .home span {
     font-size: calc(var(--size-s) * 2);
