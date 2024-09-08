@@ -146,8 +146,6 @@ nav {
 
 
 
-
-
 /* HOME SECTION */
 .landingPage {
   width: 100%;
@@ -157,6 +155,7 @@ nav {
   background-position: center;
   background-repeat: no-repeat; 
   margin: 0;
+  position: relative;
 }
 
 .home {
