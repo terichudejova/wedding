@@ -7,9 +7,9 @@ export default function Home() {
                 <span>Lucie & Petr</span>
                 <h1>Budeme se brát.</h1>
             </div>
-            <footer class='copyright'>
+            <div class='copyright'>
                 <a href='https://www.terezachudejova.cz/' target='_isBlank'><p>© Tereza Chudějová, 2024</p></a>
-            </footer>
+            </div>
         </div>
     )
 }

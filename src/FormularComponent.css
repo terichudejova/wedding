@@ -50,6 +50,12 @@
     outline: none;
   }
 
+
+  /* Barva možností */
+  select {
+    color: var(--hover-color);
+  }
+
   /* Styl pro tlačítko */
   .formularButton {
     width: 150px;

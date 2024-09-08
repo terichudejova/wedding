@@ -1439,6 +1439,10 @@ footer a:hover {
     width: 12rem;
   }
 
+  .answer p {
+    font-size: var(--size-s);
+  }
+
   /* KONTAKT */
   .contact p {
     font-size: var(--size-s);
