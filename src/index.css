@@ -1021,15 +1021,19 @@ footer a:hover {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 60px; /* Adjust according to your design */
+    top: 0;
     right: 0;
     width: 100%;
     text-align: center;
     transition: 0.3s ease-in-out;
-    margin-top: var(--space-s);
+    margin-top: 0;
     z-index: 1;
     padding-top: var(--space-xs);
     padding-bottom: var(--space-xs);
+  }
+
+  .nav.open {
+    padding-top: 0;
   }
 
   .nav.open .nav-links {
@@ -1043,6 +1047,12 @@ footer a:hover {
 
   .hamburger {
     display: flex;
+    z-index: 2;
+    margin-top: var(--space-s);
+  }
+
+  .bar {
+    background-color: var(--hover-color);
   }
   
   .nav-links.show {
