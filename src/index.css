@@ -1064,9 +1064,9 @@ footer a:hover {
     color: var(--second-color);
   }
 
-  .nav.scrolled {
+  /* .nav.scrolled {
     background-color: transparent;
-  }
+  } */
 
   /* KDY A KDE */
   .placeColumn,
