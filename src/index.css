@@ -113,9 +113,16 @@ nav {
 
 .nav.scrolled {
   background-color: var(--second-color);
+  padding-top: var(--space-xs);
+  padding-bottom: var(--space-xs);
 }
 
+
 /* Hamburger Menu */
+.nav.scrolled .hamburger {
+  margin-top: var(--space-xs);
+}
+
 .hamburger {
   display: none;
   flex-direction: column;
