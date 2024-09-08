@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { NavLink, Outlet } from 'react-router-dom'
+import ScrollToTop from './ScrollToTop';
 
 
 
@@ -40,6 +41,7 @@ function App() {
 
   return (
     <div>
+      <ScrollToTop />
       <nav className={`nav ${isOpen ? 'open' : ''} ${isScrolled ? 'scrolled' : ''}`}>
         <div className="hamburger" onClick={toggleMenu}>
           <span className="bar"></span>
