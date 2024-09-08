@@ -1290,6 +1290,7 @@ footer a:hover {
   /* KONTAKT */
   .contact p {
     font-size: var(--size-s2);
+    width: 90%;
   }
   
   .contact.innerBox {
@@ -1446,6 +1447,11 @@ footer a:hover {
   .contact p {
     font-size: var(--size-s);
     width: 100%;
+  }
+
+  .contact.innerBox {
+    padding-left: var(--space-m);
+    padding-right: var(--space-m);
   }
 }
 

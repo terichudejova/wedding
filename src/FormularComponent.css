@@ -133,6 +133,10 @@
     .formularObject {
       width: 40rem;
     }
+
+    .textArea {
+      min-height: 200px;
+    }
   }
 
   @media only screen and (max-width: 500px) {
