@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import "./FormularComponent.css";
 
+
 const FormularComponent = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
