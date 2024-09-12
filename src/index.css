@@ -458,6 +458,11 @@ nav {
   width: 100%;
 }
 
+.svatebcan {
+  width: 200px;
+  height: 200px;
+}
+
 #brideImg,
 #groomImg {
   width: 200px;
@@ -467,11 +472,11 @@ nav {
   border: 2px solid var(--main-color);
 }
 
-#groomImg {
+.svatebcanPetr {
   margin-right: var(--space-l);
 }
 
-#brideImg {
+.svatebcanLucie {
   margin-left: var(--space-l);
 }
 
@@ -1181,13 +1186,13 @@ footer a:hover {
     margin-left: var(--space-s);
   }
 
-  #groomImg,
-  #brideImg {
+  .svatebcanLucie,
+  .svatebcanPetr {
     margin: 0;
     margin-bottom: var(--space-s);
   }
 
-  #brideImg {
+  .svatebcanLucie {
     order: -1;
   }
 

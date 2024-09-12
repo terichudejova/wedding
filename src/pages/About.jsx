@@ -8,7 +8,7 @@ export default function About() {
                     <div className="relativeDiv">
                         <div className="petrLucie">
                             <div className="petr">
-                                <img id='groomImg' src='images/groom.jpg'/>
+                                <div className="svatebcan svatebcanPetr"><img id='groomImg' src='images/groom.jpg'/></div>
                                 <div className="omne">
                                     <h3>Petr</h3>
                                     <p>Petr je energický a optimistický člověk, který má rád sport, hudbu a neustále objevuje nové věci. Jeho smysl pro humor a nevyčerpatelná energie dělají každý den dobrodružstvím.</p>
@@ -19,7 +19,7 @@ export default function About() {
                                     <h3>Lucie</h3>
                                     <p>Lucie je kreativní duše, která miluje umění, knihy a dlouhé procházky přírodou. Její smysl pro detail a neuvěřitelná empatie z ní dělají tu nejmilejší osobu, kterou byste si přáli mít po svém boku.</p>
                                 </div>
-                                <img id='brideImg' src='images/bride.jpg'/>
+                                <div className="svatebcan svatebcanLucie"><img id='brideImg' src='images/bride.jpg'/></div>
                             </div>
                         </div>
                         <div className="storyHeader">
